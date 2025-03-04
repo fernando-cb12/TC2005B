@@ -1,0 +1,32 @@
+header {
+  background-color: #8c83ae;
+  display: flex;
+}
+#logo {
+  margin: 20px;
+}
+#logoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+#userContainer {
+  display: flex;
+  align-items: end;
+  padding: 10px 20px;
+  width: 100%;
+}
+button {
+  background-color: #8c83ae;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10%;
+}
