@@ -23,113 +23,121 @@
     </header>
 
     <div id="main">
-      <div id="items">
-        <div id="sidebar">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Price" />
-          <input type="text" placeholder="ID" />
-          <input type="text" placeholder="Category" />
-          <button>Save changes</button>
-          <img src="" alt="Product image" />
+      <div id="window">
+
+        <div id="upper_row">
+          <div id="edit_item">
+            <img src="" alt="Product image" />
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Price" />
+            <input type="text" placeholder="ID" />
+            <input type="text" placeholder="Category" />
+            <button id="save_changes">Save changes</button>
+            
+          </div>
+          <table>
+            <thead>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Identificador</th>
+              <th>Cantidad</th>
+              <th>
+                <select label for="category" id="category">
+                  <option>Higiene</option>
+                  <option>Entretenimiento</option>
+                  <option>Electronica</option>
+                  <option>Comida</option>
+                </select>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pañales Huggies 12pz</td>
+                <td>149.99</td>
+                <td>98547625</td>
+                <td><input type="text" placeholder="7" /></td>
+                <td>Higiene</td>
+              </tr>
+              <tr>
+                <td>Cepillo de dientes Colgate 3pz  </td>
+                <td>49.99</td>
+                <td>75489635</td>
+                <td><input type="text" placeholder="5" /></td>
+                <td>Higiene</td>
+              </tr>
+              <tr>
+                <td>Shampoo Sedal 1L</td>
+                <td>89.99</td>
+                <td>12365478</td>
+                <td><input type="text" placeholder="3" /></td>
+                <td>Higiene</td>
+              </tr>
+              <tr>
+                <td>Sabritas adobadas 75gr</td>
+                <td>21.90</td>
+                <td>45698712</td>
+                <td><input type="text" placeholder="10" /></td>
+                <td>Comida</td>
+              </tr>
+              <tr>
+                <td>Agua Ciel 1.5L</td>
+                <td>12.50</td>
+                <td>78965412</td>
+                <td><input type="text" placeholder="15" /></td>
+                <td>Comida</td>
+              </tr>
+              <tr>
+                <td>Refresco Coca Cola 2L</td>
+                <td>19.99</td>
+                <td>45612378</td>
+                <td><input type="text" placeholder="8" /></td>
+                <td>Comida</td>
+              </tr>
+              <tr>
+                <td>Control Xbox One</td>
+                <td>999.99</td>
+                <td>12345678</td>
+                <td><input type="text" placeholder="2" /></td>
+                <td>Entretenimiento</td>
+              </tr>
+              <tr>
+                <td>Control PS4</td>
+                <td>899.99</td>
+                <td>24033331</td>
+                <td><input type="text" placeholder="3" /></td>
+                <td>Entretenimiento</td>
+              </tr>
+              <tr>
+                <td>Cargador Lightning-usb C</td>
+                <td>109.99</td>
+                <td>29462218</td>
+                <td><input type="text" placeholder="4" /></td>
+                <td>Electronica</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td colspan="5">
+                <button id="addProducto" onclick="showPopup()">+</button>
+              </td>
+            </tfoot>
+          </table>
         </div>
-        <table>
-          <thead>
-            <th>Producto</th>
-            <th>Precio</th>
-            <th>Identificador</th>
-            <th>Cantidad</th>
-            <th>
-              <select label for="category" id="category">
-                <option>Higiene</option>
-                <option>Entretenimiento</option>
-                <option>Electronica</option>
-                <option>Comida</option>
-              </select>
-            </th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pañales Huggies 12pz</td>
-              <td>149.99</td>
-              <td>98547625</td>
-              <td><input type="text" placeholder="7" /></td>
-              <td>Higiene</td>
-            </tr>
-            <tr>
-              <td>Cepillo de dientes Colgate 3pz  </td>
-              <td>49.99</td>
-              <td>75489635</td>
-              <td><input type="text" placeholder="5" /></td>
-              <td>Higiene</td>
-            </tr>
-            <tr>
-              <td>Shampoo Sedal 1L</td>
-              <td>89.99</td>
-              <td>12365478</td>
-              <td><input type="text" placeholder="3" /></td>
-              <td>Higiene</td>
-            </tr>
-            <tr>
-              <td>Sabritas adobadas 75gr</td>
-              <td>21.90</td>
-              <td>45698712</td>
-              <td><input type="text" placeholder="10" /></td>
-              <td>Comida</td>
-            </tr>
-            <tr>
-              <td>Agua Ciel 1.5L</td>
-              <td>12.50</td>
-              <td>78965412</td>
-              <td><input type="text" placeholder="15" /></td>
-              <td>Comida</td>
-            </tr>
-            <tr>
-              <td>Refresco Coca Cola 2L</td>
-              <td>19.99</td>
-              <td>45612378</td>
-              <td><input type="text" placeholder="8" /></td>
-              <td>Comida</td>
-            </tr>
-            <tr>
-              <td>Control Xbox One</td>
-              <td>999.99</td>
-              <td>12345678</td>
-              <td><input type="text" placeholder="2" /></td>
-              <td>Entretenimiento</td>
-            </tr>
-            <tr>
-              <td>Control PS4</td>
-              <td>899.99</td>
-              <td>24033331</td>
-              <td><input type="text" placeholder="3" /></td>
-              <td>Entretenimiento</td>
-            </tr>
-            <tr>
-              <td>Cargador Lightning-usb C</td>
-              <td>109.99</td>
-              <td>29462218</td>
-              <td><input type="text" placeholder="4" /></td>
-              <td>Electronica</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <td colspan="5">
-              <button id="addProducto" onclick="showPopup()">+</button>
-            </td>
-          </tfoot>
-        </table>
+
+        <div id="lower_row">
         <!--implementamos la adicion de elemento en una ventana dentro de la pagina-->
-        <div id="popup" style="display: none">
-          <h2>Add New Product</h2>
-          <input type="text" placeholder="Product Name" id="newProductName" />
-          <input type="text" placeholder="Price" id="newProductPrice" />
-          <input type="text" placeholder="ID" id="newProductID" />
-          <input type="text" placeholder="Category" id="newProductCategory" />
-          <button id="saveProduct" onclick="closePopup()">Save</button>
-          <button id="closePopup" onclick="closePopup()">Cancel</button>
+          <div id="popup" style="display: none">
+            <h2>Add New Product</h2>
+            <input type="text" placeholder="Product Name" id="newProductName" />
+            <input type="text" placeholder="Price" id="newProductPrice" />
+            <input type="text" placeholder="ID" id="newProductID" />
+            <input type="text" placeholder="Category" id="newProductCategory" />
+            <button id="saveProduct" onclick="closePopup()">Save</button>
+            <button id="closePopup" onclick="closePopup()">Cancel</button>
+          </div>
         </div>
+        
       </div>
-    </div>
+    
     <script>
       function showPopup() {
         document.getElementById("popup").style.display = "block";
@@ -139,8 +147,9 @@
       }
     </script>
     </div>
+    <footer>
+      <button id="return_button">Return</button>
+    </footer>
   </body>
-  <footer>
-    <button id="return_button">Return</button>
-  </footer>
+  
 </html>
