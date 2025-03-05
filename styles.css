@@ -208,7 +208,6 @@ footer {
   border: 2px solid #e0dcea;
   border-radius: 8px;
   font-size: 14px;
-  transition: border-color 0.3s ease;
 }
 
 #popup button {
