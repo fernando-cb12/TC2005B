@@ -1,24 +1,20 @@
-
-html, body {
+body {
   font-family: "Roboto";
   margin: 0;
-  background-color: #c0b9d8;
+  background-color: white;
+  height: 100vh;
 }
 
 header {
-
   background-color: #8c83ae;
   display: flex;
   align-items: center;
 }
 
 #main {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
 #logo {
   margin: 10px;
@@ -46,7 +42,6 @@ header h1 {
   width: 100%;
 }
 
-
 button {
   background-color: #8c83ae;
   color: #fff;
@@ -55,34 +50,24 @@ button {
   border-radius: 5px;
   cursor: pointer;
   width: 10%;
-  
 }
 
 #logOutButton {
   background-color: #60587b;
   margin-left: 20px;
   align-items: center;
-
 }
 
-
 #window {
-  
   border: 5px solid #8c83ae;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin: 25px;
   margin-bottom: 15px;
   padding: 10px;
   background-color: white;
-}
-
-#upper_row {
-  display: flex;
-  flex-direction: row;
-
 }
 
 #edit_item {
@@ -94,20 +79,15 @@ button {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 250px;
-
 }
 #save_changes {
   margin-top: 10px;
   width: auto;
-  
 }
 
 td {
   padding: 0 7px;
-
 }
-
-
 
 /* Enhanced Table Styling */
 table {
@@ -163,17 +143,30 @@ td input {
   margin-top: 0px;
 }
 
-#popup {
-  margin-left: 9px;
-  display: flex;
-  flex-direction: row;
-}
-
-/* Improved category select */
 select#category {
   width: 100%;
   padding: 5px;
   background-color: #f3f1f9;
   border: 1px solid #8c83ae;
   border-radius: 3px;
+}
+
+footer {
+  background-color: #8c83ae;
+}
+
+#addProducto {
+  width: 100%;
+}
+
+.imageContainer {
+  height: 180px;
+}
+
+.productInput {
+  margin: 10px auto;
+}
+
+#window {
+  height: ;
 }

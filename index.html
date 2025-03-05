@@ -3,37 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Figtree" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Figtree"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <title>Abarrotec</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  
+
   <body>
-    
     <header>
       <section id="logoContainer">
         <img src="shopping-cart.png" alt="Logo" id="logo" />
         <h1>Registec</h1>
       </section>
       <section id="userContainer">
-        <p>username</p>
+        <p>Username</p>
         <button id="logOutButton">Log out</button>
       </section>
     </header>
 
     <div id="main">
       <div id="window">
-
-        <div id="upper_row">
           <div id="edit_item">
-            <img src="" alt="Product image" />
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Price" />
-            <input type="text" placeholder="ID" />
-            <input type="text" placeholder="Category" />
+            <div class="imageContainer">
+              <img src="" alt="Product image" />
+            </div>
+            <input class="productInput" type="text" placeholder="Name" />
+            <input class="productInput" type="text" placeholder="Price" />
+            <input class="productInput" type="text" placeholder="ID" />
+            <input class="productInput" type="text" placeholder="Category" />
             <button id="save_changes">Save changes</button>
-            
           </div>
           <table>
             <thead>
@@ -59,7 +63,7 @@
                 <td>Higiene</td>
               </tr>
               <tr>
-                <td>Cepillo de dientes Colgate 3pz  </td>
+                <td>Cepillo de dientes Colgate 3pz</td>
                 <td>49.99</td>
                 <td>75489635</td>
                 <td><input type="text" placeholder="5" /></td>
@@ -123,33 +127,29 @@
           </table>
         </div>
 
-        <div id="lower_row">
         <!--implementamos la adicion de elemento en una ventana dentro de la pagina-->
-          <div id="popup" style="display: none">
-            <h2>Add New Product</h2>
-            <input type="text" placeholder="Product Name" id="newProductName" />
-            <input type="text" placeholder="Price" id="newProductPrice" />
-            <input type="text" placeholder="ID" id="newProductID" />
-            <input type="text" placeholder="Category" id="newProductCategory" />
-            <button id="saveProduct" onclick="closePopup()">Save</button>
-            <button id="closePopup" onclick="closePopup()">Cancel</button>
-          </div>
+        <div id="popup" style="display: none">
+          <h2>Add New Product</h2>
+          <input type="text" placeholder="Product Name" id="newProductName" />
+          <input type="text" placeholder="Price" id="newProductPrice" />
+          <input type="text" placeholder="ID" id="newProductID" />
+          <input type="text" placeholder="Category" id="newProductCategory" />
+          <button id="saveProduct" onclick="closePopup()">Save</button>
+          <button id="closePopup" onclick="closePopup()">Cancel</button>
         </div>
-        
       </div>
-    
-    <script>
-      function showPopup() {
-        document.getElementById("popup").style.display = "block";
-      }
-      function closePopup() {
-        document.getElementById("popup").style.display = "none";
-      }
-    </script>
+
+      <script>
+        function showPopup() {
+          document.getElementById("popup").style.display = "block";
+        }
+        function closePopup() {
+          document.getElementById("popup").style.display = "none";
+        }
+      </script>
     </div>
     <footer>
       <button id="return_button">Return</button>
     </footer>
   </body>
-  
 </html>
