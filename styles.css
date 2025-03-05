@@ -9,12 +9,14 @@ header {
   background-color: #8c83ae;
   display: flex;
   align-items: center;
+  height: 10%;
 }
 
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80%;
 }
 #logo {
   margin: 10px;
@@ -141,6 +143,7 @@ td input {
 #return_button {
   margin-left: 200px;
   margin-top: 0px;
+  background-color: #60587b;
 }
 
 select#category {
@@ -153,6 +156,9 @@ select#category {
 
 footer {
   background-color: #8c83ae;
+  height: 10%;
+  display: flex;
+  align-items: center;
 }
 
 #addProducto {
@@ -165,8 +171,4 @@ footer {
 
 .productInput {
   margin: 10px auto;
-}
-
-#window {
-  height: ;
 }
