@@ -172,3 +172,49 @@ footer {
 .productInput {
   margin: 10px auto;
 }
+
+#popupBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  display: none;
+  justify-content: center;
+}
+
+#popup h2 {
+  text-align: center;
+}
+
+#popup input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #e0dcea;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#popup button {
+  width: 100%;
+  margin: 15px 5px 0;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}

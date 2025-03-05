@@ -128,23 +128,29 @@
         </div>
 
         <!--implementamos la adicion de elemento en una ventana dentro de la pagina-->
-        <div id="popup" style="display: none">
-          <h2>Add New Product</h2>
-          <input type="text" placeholder="Product Name" id="newProductName" />
-          <input type="text" placeholder="Price" id="newProductPrice" />
-          <input type="text" placeholder="ID" id="newProductID" />
-          <input type="text" placeholder="Category" id="newProductCategory" />
-          <button id="saveProduct" onclick="closePopup()">Save</button>
-          <button id="closePopup" onclick="closePopup()">Cancel</button>
+        <div id="popupBackground">
+          <div id="popup" style="display: none">
+            <h2>Add New Product</h2>
+            <input type="text" placeholder="Product Name" id="newProductName" />
+            <input type="text" placeholder="Price" id="newProductPrice" />
+            <input type="text" placeholder="ID" id="newProductID" />
+            <input type="text" placeholder="Category" id="newProductCategory" />
+            <button id="saveProduct" onclick="closePopup()">Save</button>
+            <button id="closePopup" onclick="closePopup()">Cancel</button>
+          </div>
         </div>
       </div>
 
       <script>
         function showPopup() {
           document.getElementById("popup").style.display = "block";
+          document.getElementById("popupBackground").style.display = "block";
+
         }
         function closePopup() {
           document.getElementById("popup").style.display = "none";
+          document.getElementById("popupBackground").style.display = "none";
+
         }
       </script>
     </div>
