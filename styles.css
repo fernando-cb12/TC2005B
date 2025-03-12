@@ -1,91 +1,100 @@
-
-html, body {
-  font-family: "Roboto";
-  margin: 0;
-  background-color: #c0b9d8;
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-
   background-color: #8c83ae;
-  display: flex;
-  align-items: center;
 }
 
-#main {
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
-}
-#logo {
-  margin: 10px;
-  width: 64px;
+.logo-container img {
+  width: 48px;
   height: auto;
 }
-#logoContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-}
+
 header h1 {
   color: #fff;
   font-family: "Roboto", sans-serif;
-}
-#userContainer {
-  display: flex;
-  align-items: end;
-  padding-left: 20px;
-  width: 100%;
+  margin-bottom: 0;
 }
 
+.main-content {
+  flex: 1;
+}
 
-button {
+.custom-btn {
   background-color: #8c83ae;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 10%;
 }
 
-#logOutButton {
+.custom-btn:hover {
+  background-color: #706697;
+  color: #fff;
+}
+
+.logout-btn {
   background-color: #60587b;
-
+  color: #fff;
 }
 
-#sidebar {
-  margin: 15px 0;
-
+.logout-btn:hover {
+  background-color: #4d4764;
+  color: #fff;
 }
 
-#items {
-  
+.return-btn {
+  background-color: #60587b;
+  color: #fff;
+}
+
+.content-card {
   border: 5px solid #8c83ae;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
-  padding: 20px;
   background-color: white;
 }
 
-td {
-  padding: 0 7px;
-
+.edit-item {
+  background-color: #f3f1f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#return_button {
-  margin-left: 9px;
-
+.table-header {
+  background-color: #8c83ae;
+  color: white;
 }
 
-#popup {
-  margin-left: 9px;
+.image-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.table-responsive {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f1f9;
+}
+
+tbody tr:hover {
+  background-color: #e0dcea;
+}
+
+footer {
+  background-color: #8c83ae;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .edit-item {
+    margin-bottom: 20px;
+  }
 }
