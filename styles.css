@@ -84,6 +84,29 @@ tbody tr:nth-child(even) {
   background-color: #f3f1f9;
 }
 
+#upper_row {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#edit_item {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f1f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+
+}
+#save_changes {
+  margin-top: 10px;
+  width: auto;
+  
+}
+
 tbody tr:hover {
   background-color: #e0dcea;
 }
