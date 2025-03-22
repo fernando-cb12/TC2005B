@@ -14,11 +14,6 @@ const newProductPrice = document.getElementById("newProductPrice");
 const newProductID = document.getElementById("newProductID");
 const newProductCategory = document.getElementById("newProductCategory");
 
-// Modal Bootstrap
-const addProductModal = new bootstrap.Modal(
-  document.getElementById("addProductModal")
-);
-
 // Cargar productos desde la API al iniciar la página
 document.addEventListener("DOMContentLoaded", () => {
   loadProducts();
